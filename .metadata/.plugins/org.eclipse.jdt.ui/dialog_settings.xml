@@ -27,7 +27,7 @@
 	</section>
 	<section name="FatJarPackageWizard">
 		<item key="FatJarPackageWizardPage.ANTSCRIPT_SAVE" value="false"/>
-		<item key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION" value="C:\Users\Roger\Documents\ArquitecturaWorkspace"/>
+		<item key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION" value="C:\Users\Roger\Documents\ArquitecturaWorkspace.xml"/>
 		<item key="FatJarPackageWizardPage.LIBRARY_HANDLING" value="2"/>
 		<item key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME" value="Main (1) - Ejercicio"/>
 		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="Ejercicio\ejecutable\app.jar"/>
