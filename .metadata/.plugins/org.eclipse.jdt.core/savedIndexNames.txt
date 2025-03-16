@@ -1,11 +1,4 @@
-INDEX VERSION 1.134+C:\Users\Roger\Documents\Arquitectura\TalleresArq\.metadata\.plugins\org.eclipse.jdt.core
+INDEX VERSION 1.134+C:\Users\Roger\Documents\Arquitectura\Arquitectura 1\.metadata\.plugins\org.eclipse.jdt.core
+2179537226.index
 1865797976.index
-3364681630.index
-4158074507.index
-1118387381.index
-2715687965.index
-1741150583.index
-621219594.index
-147855216.index
-334632412.index
-2985776969.index
+1325162156.index
