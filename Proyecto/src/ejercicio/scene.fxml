@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ejercicio.Control">
+   <center>
+      <VBox prefHeight="241.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="745.0" text="Decimal">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtDecimal" onKeyReleased="#update" style="-fx-background-color: FFFFFF; -fx-border-color: grey;">
+               <font>
+                  <Font name="Consolas Bold" size="12.0" />
+               </font>
+            </TextField>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="811.0" text="Octal">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtOctal" onKeyReleased="#update" style="-fx-background-color: FFFFFF; -fx-border-color: grey;">
+               <font>
+                  <Font name="Consolas Bold" size="12.0" />
+               </font>
+            </TextField>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="730.0" text="Hexadecimal">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtHexadecimal" onKeyReleased="#update" style="-fx-background-color: FFFFFF; -fx-border-color: grey;">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+            </TextField>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="717.0" text="Binario">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtBinario" onKeyReleased="#update" style="-fx-background-color: FFFFFF; -fx-border-color: grey;" />
+            <Separator prefHeight="31.0" prefWidth="400.0" />
+            <Label fx:id="newSpace" alignment="CENTER" prefHeight="17.0" prefWidth="356.0" text="Label">
+               <font>
+                  <Font name="Consolas Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtNewSpace" style="-fx-background-color: FFFFFF; -fx-border-color: grey;" />
+            <Separator prefHeight="41.0" prefWidth="299.0" />
+            <Button fx:id="btnLimpiar" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#limpiar" prefHeight="27.0" prefWidth="97.0" text="LIMPIAR" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets left="25.0" right="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <Label alignment="CENTER" prefHeight="74.0" prefWidth="456.0" text="CONVERTIDOR DE UNIDADES" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Consolas Bold" size="36.0" />
+         </font>
+      </Label>
+   </top>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <VBox prefHeight="291.0" prefWidth="299.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="404.0" text="Unidad 1">
+               <font>
+                  <Font name="Consolas Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <ComboBox fx:id="cBoxUnit1" nodeOrientation="LEFT_TO_RIGHT" onAction="#select" prefHeight="25.0" prefWidth="371.0" promptText="None">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </ComboBox>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="404.0" text="Operación">
+               <font>
+                  <Font name="Consolas Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </Label>
+            <ComboBox fx:id="cBoxType" onAction="#select" prefHeight="25.0" prefWidth="374.0" promptText="None">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </ComboBox>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="404.0" text="Unidad 2">
+               <font>
+                  <Font name="Consolas Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </Label>
+            <ComboBox fx:id="cBoxUnit2" onAction="#select" prefHeight="25.0" prefWidth="556.0" promptText="None">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </ComboBox>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="339.0" text="Formato Resultado">
+               <font>
+                  <Font name="Consolas Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </Label>
+            <ComboBox fx:id="cBoxFormat" prefHeight="25.0" prefWidth="444.0">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </ComboBox>
+            <Button mnemonicParsing="false" onAction="#doMath" prefHeight="25.0" prefWidth="433.0" text="HECHO">
+               <VBox.margin>
+                  <Insets left="75.0" right="75.0" top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="398.0" text="Resultado">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Consolas Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtResult" disable="true" promptText="Aqui aparecera el resultado" style="-fx-background-color: wihte; -fx-border-color: gray;">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

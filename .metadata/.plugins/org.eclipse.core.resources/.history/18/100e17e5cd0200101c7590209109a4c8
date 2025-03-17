@@ -1,0 +1,13 @@
+package ejercicio;
+
+public class Pruebas {
+
+	public static void main(String[] args) {
+		try {
+			System.out.println(Model.binaryToDecimal("1111111111111111111111111111"));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}
